@@ -33,7 +33,7 @@ st.sidebar.title("Navigation")
 option = st.sidebar.radio("Select a tab:", ("About",
                                             "Infection Cases & Rates",
                                             "COVID-19 LLM News Analyst",
-                                            "Hospitalization Burden Forecasts"
+                                            #"Hospitalization Burden Forecasts"
                                             ))
 
 
