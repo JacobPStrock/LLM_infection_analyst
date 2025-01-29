@@ -1,0 +1,160 @@
+hhs1:
+  name: "region_1"
+  states:
+    - Connecticut
+    - Maine
+    - Massachusetts
+    - New Hampshire
+    - Rhode Island
+    - Vermont
+hhs2:
+  name: "region_2"
+  states:
+    - New Jersey
+    - New York
+hhs3:
+  name: "region_3"
+  states:
+    - Delaware
+    - District of Columbia
+    - Maryland
+    - Pennsylvania
+    - Virginia
+    - West Virginia
+hhs4:
+  name: "region_4"
+  states:
+    - Alabama
+    - Florida
+    - Georgia
+    - Kentucky
+    - Mississippi
+    - North Carolina
+    - South Carolina
+    - Tennessee
+hhs5:
+  name: "region_5"
+  states:
+    - Illinois
+    - Indiana
+    - Michigan
+    - Minnesota
+    - Ohio
+    - Wisconsin
+hhs6:
+  name: "region_6"
+  states:
+    - Arkansas
+    - Louisiana
+    - New Mexico
+    - Oklahoma
+    - Texas
+hhs7:
+  name: "region_7"
+  states:
+    - Iowa
+    - Kansas
+    - Missouri
+    - Nebraska
+hhs8:
+  name: "region_8"
+  states:
+    - Colorado
+    - Montana
+    - North Dakota
+    - South Dakota
+    - Utah
+    - Wyoming
+hhs9:
+  name: "region_9"
+  states:
+    - Arizona
+    - California
+    - Hawaii
+    - Nevada
+hhs10:
+  name: "region_10"
+  states:
+    - Alaska
+    - Idaho
+    - Oregon
+    - Washington
+
+cen1:
+  name: "new_england"
+  states:
+    - Connecticut
+    - Maine
+    - Massachusetts
+    - New Hampshire
+    - Rhode Island
+    - Vermont
+cen2:
+  name: "mid_atlantic"
+  states:
+    - New Jersey
+    - New York
+    - Pennsylvania
+cen3:
+  name: "east_north_central"
+  states:
+    - Illinois
+    - Indiana
+    - Michigan
+    - Ohio
+    - Wisconsin
+cen4:
+  name: "west_north_central"
+  states:
+    - Iowa
+    - Kansas
+    - Minnesota
+    - Missouri
+    - Nebraska
+    - North Dakota
+    - South Dakota
+cen5:
+  name: "south_atlantic"
+  states:
+    - Delaware
+    - District of Columbia
+    - Florida
+    - Georgia
+    - Maryland
+    - North Carolina
+    - South Carolina
+    - Virginia
+    - West Virginia
+cen6:
+  name: "east_south_central"
+  states:
+    - Alabama
+    - Kentucky
+    - Mississippi
+    - Tennessee
+cen7:
+  name: "west_south_central"
+  states:
+    - Arkansas
+    - Louisiana
+    - Oklahoma
+    - Texas
+cen8:
+  name: "mountain"
+  states:
+    - Arizona
+    - Colorado
+    - Idaho
+    - Montana
+    - Nevada
+    - New Mexico
+    - Utah
+    - Wyoming
+cen9:
+  name: "pacific"
+  states:
+    - Alaska
+    - California
+    - Hawaii
+    - Oregon
+    - Washington

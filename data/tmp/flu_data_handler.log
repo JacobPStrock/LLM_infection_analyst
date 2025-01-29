@@ -1,0 +1,9 @@
+2025-01-27 16:56:44,880 - __main__ - INFO - Removed file: c:\Users\Jstrock\OneDrive - ConvenientMD\Documents\Analysis\FluModeling\src\utils\..\..\data\tmp\fluview_data_2025-01-27.csv
+2025-01-27 16:56:47,097 - root - INFO - Success: Retrieved 6075 records.
+2025-01-27 16:56:47,164 - __main__ - INFO - Flu data saved to c:\Users\Jstrock\OneDrive - ConvenientMD\Documents\Analysis\FluModeling\src\utils\..\..\data\tmp\fluview_data_2025-01-27.csv.
+2025-01-27 17:08:42,742 - infection_scraper - INFO - Removed file: C:\Users\Jstrock\OneDrive - ConvenientMD\Documents\Analysis\FluModeling\src\streamlit\app.py\..\..\..\data\tmp\fluview_data_2025-01-27.csv
+2025-01-27 17:08:45,746 - root - INFO - Success: Retrieved 6075 records.
+2025-01-27 17:08:45,831 - infection_scraper - INFO - Flu data saved to C:\Users\Jstrock\OneDrive - ConvenientMD\Documents\Analysis\FluModeling\src\streamlit\app.py\..\..\..\data\tmp\fluview_data_2025-01-27.csv.
+2025-01-28 09:20:42,793 - infection_scraper - INFO - Removed file: C:\Users\Jstrock\OneDrive - ConvenientMD\Documents\Analysis\FluModeling\src\streamlit\app.py\..\..\..\data\tmp\fluview_data_2025-01-27.csv
+2025-01-28 09:20:47,033 - root - INFO - Success: Retrieved 6075 records.
+2025-01-28 09:20:47,101 - infection_scraper - INFO - Flu data saved to C:\Users\Jstrock\OneDrive - ConvenientMD\Documents\Analysis\FluModeling\src\streamlit\app.py\..\..\..\data\tmp\fluview_data_2025-01-28.csv.

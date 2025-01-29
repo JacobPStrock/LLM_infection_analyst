@@ -1,0 +1,4 @@
+cfg/oai.yaml
+cfg/newsapi.yaml
+.ssh/
+.venv
