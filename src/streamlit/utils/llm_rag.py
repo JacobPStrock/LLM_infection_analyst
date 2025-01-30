@@ -32,7 +32,7 @@ class LLMRag():
     def __init__(self):
         logging.basicConfig(level=logging.INFO)
         self.logger = logging.getLogger(self.__class__.__name__)
-        self._openai_api_key = st.secrets['oai_key']
+        self._openai_api_key = st.secrets['oapi_key']
         #self._openai_api_key = self._load_api_key()
         self._faiss_index_path = os.path.join(data_tmp, "faiss_index")
         self._db = None
