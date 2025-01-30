@@ -3,22 +3,24 @@ import requests
 import yaml
 import json
 import glob
+import streamlit as st
 from datetime import datetime, timedelta
 from bs4 import BeautifulSoup
 from typing import Dict, List, Optional
 
-cwd = os.path.abspath(__file__)
+cwd = os.path.dirname(os.path.abspath(__file__))
 cfg_path = os.path.join(cwd,'..','..', '..', 'cfg', 'newsapi.yaml')
-data_tmp = os.path.join(cwd, '..', '..', '..', 'data', 'tmp')
+data_tmp = os.path.join(cwd, '..', 'data', 'tmp')
 
-with open(cfg_path, 'rb') as cfg_file:
-        api_key = yaml.full_load(cfg_file)['key']
+#with open(cfg_path, 'rb') as cfg_file:
+#        api_key = yaml.full_load(cfg_file)['key']
 
 class NewsScraper:
     def __init__(self, config_path: str, data_tmp: str):
         self.config_path = config_path
         self.data_tmp = data_tmp
-        self.api_key = self._load_api_key()
+        self.api_key = st.secrets['napi_key']
+        #self.api_key = self._load_api_key()
 
 
     def _load_api_key(self) -> str:

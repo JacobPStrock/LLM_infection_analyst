@@ -12,21 +12,21 @@ import glob
 # supress warnings from printing on app
 warnings.filterwarnings('ignore')
 
-cwd = os.path.abspath(__file__)
-sys.path.append(os.path.join(cwd, '..', '..', 'utils'))
+cwd = os.path.dirname(os.path.abspath(__file__))
+sys.path.append(os.path.join(cwd, 'utils'))
 import llm_rag as lm
 from infection_scraper import FluDataHandler
 
 st.set_page_config(layout="wide")
 
 # Add an official-looking image to the app
-banner = os.path.join(cwd,'..', 'assets', 'header_image_chat2.jpg')
-inf_data = os.path.join(cwd, '..', '..', '..', 'data', 'tmp')
-ref_data = os.path.join(cwd, '..', '..', '..', 'data', 'ref')
-pop_data = os.path.join(cwd, '..', '..', '..', 'data', 'ref', 'state_populations.csv')
-images = os.path.join(cwd,'..', '..', '..', 'data', 'assets')
-cfg_dir = os.path.join(cwd,'..', '..', '..', 'cfg')
-
+banner = os.path.join(cwd,'data', 'assets', 'header_image_chat2.jpg')
+inf_data = os.path.join(cwd, 'data', 'tmp')
+ref_data = os.path.join(cwd, 'data', 'ref')
+pop_data = os.path.join(cwd, 'data', 'ref', 'state_populations.csv')
+images   = os.path.join(cwd, 'data', 'assets')
+cfg_dir  = os.path.join(cwd, 'cfg')
+ 
 # Sidebar for navigation
 st.sidebar.image(os.path.join(images,'ds_portfolio_logo_v2.png'))
 st.sidebar.title("Navigation")
@@ -178,14 +178,14 @@ elif option == "About":
 
     # Overview
     #st.write('## Overview')
-    over_doc = os.path.join(cwd,'..', 'desc', 'overview.md')
+    over_doc = os.path.join(cwd, 'desc', 'overview.md')
     with open(over_doc, 'r', encoding='utf-8') as f:
         over_cont = f.read()
     with st.expander('Overview'):
         st.markdown(over_cont)
 
     # Description & Quick Start
-    quick_start = os.path.join(cwd, '..', 'desc', 'quick_start.md')
+    quick_start = os.path.join(cwd,'desc', 'quick_start.md')
     with open(quick_start, 'r', encoding='utf-8') as f:
         readme_content = f.read()
     with st.expander('Quick Start Guide'):  
@@ -194,7 +194,7 @@ elif option == "About":
     # LLM & RAG description
     #st.write("-------------------")
     #st.write("## Interactive News Analyst \n ### (LLM Retrieval-Augmented Generation)")
-    llm_desc = os.path.join(cwd, '..', 'desc', 'llm_rag_desc.md')
+    llm_desc = os.path.join(cwd, 'desc', 'llm_rag_desc.md')
     with open(llm_desc, 'r', encoding='utf-8') as f:
         llm_desc_cont = f.read()
     with st.expander('LLM Retrieval-Augmented Generation'): 
@@ -205,7 +205,7 @@ elif option == "About":
     #st.write("-------------------")
     #st.write("## Data Engineering")
     #st.image(os.path.join(images, 'LLM_diagram.png'))
-    de_desc = os.path.join(cwd, '..', 'desc', 'data_engineering.md')
+    de_desc = os.path.join(cwd, 'desc', 'data_engineering.md')
     with open(de_desc, 'r', encoding='utf-8') as f:
         de_desc_cont = f.read()
     with st.expander('Data Engineering'):
@@ -215,7 +215,7 @@ elif option == "About":
     #st.write("-------------------")
     #st.write("## Forecasting")
     #st.image(os.path.join(images, 'LLM_diagram.png'))
-    pred_desc = os.path.join(cwd, '..', 'desc', 'pred_forecast_desc.md')
+    pred_desc = os.path.join(cwd, 'desc', 'pred_forecast_desc.md')
     with open(pred_desc, 'r', encoding='utf-8') as f:
         pred_desc_cont = f.read()
     with st.expander('Forecasting'):

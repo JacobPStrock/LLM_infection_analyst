@@ -7,6 +7,7 @@ import json
 import faiss
 from dotenv import load_dotenv
 import logging
+import streamlit as st
 from langchain_core.documents import Document
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain.embeddings.openai import OpenAIEmbeddings
@@ -17,10 +18,10 @@ from langchain_openai import ChatOpenAI
 from news_scraper import NewsScraper
 
 # Set resource paths
-cwd = os.path.abspath(__file__)
+cwd = os.path.dirname(os.path.abspath(__file__))
 cfg_path = os.path.join(cwd, '..', '..', '..', 'cfg', 'oai.yaml')
 cfg_news_path = os.path.join(cwd, '..', '..', '..', 'cfg', 'newsapi.yaml')
-data_tmp = os.path.join(cwd, '..', '..', '..', 'data', 'tmp')
+data_tmp = os.path.join(cwd, '..', 'data', 'tmp')
 
 # Define LLM RAG Class Object
 class LLMRag():
@@ -31,7 +32,8 @@ class LLMRag():
     def __init__(self):
         logging.basicConfig(level=logging.INFO)
         self.logger = logging.getLogger(self.__class__.__name__)
-        self._openai_api_key = self._load_api_key()
+        self._openai_api_key = st.secrets['oai_key']
+        #self._openai_api_key = self._load_api_key()
         self._faiss_index_path = os.path.join(data_tmp, "faiss_index")
         self._db = None
 
