@@ -20,7 +20,7 @@ from infection_scraper import FluDataHandler
 st.set_page_config(layout="wide")
 
 # Add an official-looking image to the app
-banner = os.path.join(cwd,  'assets', 'header_image_chat2.jpg')
+banner = os.path.join(cwd, 'data', 'assets', 'header_image_chat2.jpg')
 inf_data = os.path.join(cwd, 'data', 'tmp')
 ref_data = os.path.join(cwd, 'data', 'ref')
 pop_data = os.path.join(cwd, 'data', 'ref', 'state_populations.csv')
